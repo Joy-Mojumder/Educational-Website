@@ -42,6 +42,7 @@ li{
     --supporting-color:#98f5e1;
     --about-bg--color:#c0fdff;
     --course-bg-color:#2b2c28;
+    --footer-bg--color:#000814;
     --white-color:#FEFEDF;
     --heading-color:#3d3843;
     --hero-heading-color:#013a63;
@@ -117,7 +118,7 @@ color: var(--heading-color);
     margin:2.2rem 0 1.4rem 0;
 }
 .section-common--icon{
-    background-color: #cfbaf077;
+    background-color: var(--supporting-color);
     width: 6rem;
     aspect-ratio: 1;
     font-weight: bold;
@@ -286,7 +287,7 @@ margin:2rem 0 4.2rem 0;
                                            /*? End START ABOUT SECTION *****/
                                          /*todo course-section *****/ 
 .section-course{
-    background-color: var(--hero-bg--color);
+    background-color: var(--about-bg--color);
 }
 .section-course .grid{
     gap: 3.2rem;
@@ -358,12 +359,14 @@ margin:2rem 0 4.2rem 0;
 }
 /*todo End course-section *****/
 /***** why-choose section *****/ 
-
-.section-why--choose{
-    background-color: var(--about-bg--color);
+.section-why--choose .why-choose--center {
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 .section-why--choose .grid{
     gap: 8rem;
+    background-color: rgba(0, 255, 213, 0.085);
 }
 .section-why--choose .why-choose--div{
     margin-top: 3.3rem;
@@ -374,6 +377,7 @@ margin:2rem 0 4.2rem 0;
 align-items: end;
 text-align: right;
 }
+
  /***** End why-choose section *****/
 /*&& contact-section *****/ 
 .section-contact{
@@ -389,10 +393,14 @@ text-align: right;
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
     position: relative;
+    bottom: -18rem;
+    z-index: 1;
+    background-color: var(--about-bg--color);
 }
 .section-contact .grid{
     align-items: center;
     gap: 6rem;
+    padding: 4.2rem 2.4rem;
 }
 .section-contact .section-contact--content .section-contact--heading{
 font-size: 3.6rem;
@@ -404,25 +412,46 @@ line-height: 1.5;
 /*& End contact-section *****/
 /*^ footer-section *****/ 
 .section-footer{
-    background-color: #000814;
+    background-color: var(--footer-bg--color);
+    padding-top: 14rem;
+}
+.section-contact--image{
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+.section-footer .grid{
+    text-align: right;
 }
 .section-footer .footer-div--heading{
     color: var(--white-color);
     font-size: 2.4rem;
 text-transform: capitalize;
    line-height: 1.5;
-
+}
+.section-footer .footer-div--content,.footer-media--icons{
+    text-align: left;
+}
+.footer-div--content p{
+    margin: 1rem 0 3rem 0;
 }
 .section-footer :is(.footer-div--one,.footer-div--same) :is(p,a){
     color: var(--white-color);
+    font-size: 1.9rem;
+
 }
-.section-footer .footer-media--icons .discord-icon,.youtube-icon,.instagram-icon{
-    display: inline-block;
-    text-align: center;
-    margin: 2rem 2rem 0 0;
-    width: 3rem;
+.section-footer .footer-media--icons{
+    display: flex;
+    gap: 2rem;
+}
+.section-footer .fa-brands{
+    width: 5rem;
     aspect-ratio: 1;
-    background-color: var(--btn-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;

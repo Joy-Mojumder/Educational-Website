@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to JMD Webdev, your gateway to knowledge and skill development. We are dedicated to providing high-quality, accessible education for learners of all ages and backgrounds">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="JMD Webdev , htmlcourse , csscourse , javascriptcourse">
+    <meta name="author" content="Joy Mojumder Dip">
+    
     <title>Educational Website</title>
+
 <link rel="stylesheet" href="css/style.css">
 <link
 rel="stylesheet"
@@ -12,7 +18,7 @@ integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4A
 crossorigin="anonymous"
 referrerpolicy="no-referrer"
 />
-
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 <!--^^^^^^^^^^^^^^^ .................................................................................................... -->
@@ -53,7 +59,7 @@ welcome to JMD WEBDEV, your gateway to knowledge and skill development. we are d
     <a href="services.html" class="btn btn-blueviolet">Learn With Us</a>
 </div>
 </div>
-<div class="section-hero--image">
+<div class="section-hero--image" data-aos="fade-up">
 <figure>
 <img src="..//image/cool hero img.png" alt="A character doing coding stuff">
 </figure>
@@ -76,7 +82,7 @@ welcome to JMD WEBDEV, your gateway to knowledge and skill development. we are d
 <p class="section-common--subheading">Guiding Your Learning Journey through Research, Design, and Development Excellence.</p>
 </div>
 <div class="container grid grid-three--cols">
-<div class="section-about--div">
+<div class="section-about--div" data-aos="fade-up">
 <div class="icon">
     <img src="..//image/research.png" alt="JMD Webdev research team">
 </div>
@@ -85,7 +91,8 @@ welcome to JMD WEBDEV, your gateway to knowledge and skill development. we are d
     exciting in learning and choose topics that match what you want to
     learn.</p>
 </div>
-<div class="section-about--div">
+<div class="section-about--div" data-aos="fade-up"
+data-aos-delay="300">
 <div class="icon">
     <img src="..//image/design.png" alt="JMD Webdev research team">
 </div>
@@ -93,7 +100,8 @@ welcome to JMD WEBDEV, your gateway to knowledge and skill development. we are d
 <p>Next, we make the lessons. We make them fun and interesting for you.
     We make sure they work for different ways people like to learn.</p>
 </div>
-<div class="section-about--div">
+<div class="section-about--div" data-aos="fade-up"
+data-aos-delay="600">
 <div class="icon">
     <img src="..//image/Coding.png" alt="JMD Webdev research team">
 </div>
@@ -197,14 +205,16 @@ welcome to JMD WEBDEV, your gateway to knowledge and skill development. we are d
             <p>Learn from experienced teachers who are passionate about sharing
                 knowledge and guiding you toward success in your learning journey.</p>
             </div>
-            <div class="why-choose--div">
+            <div class="why-choose--div" data-aos="zoom-in-up"
+            data-aos-delay="300">
             <p class="section-common--icon">2</p>
             <h3 class="section-common--title">Interactive Lessons</h3>
             <p>              Engage in hands-on learning experiences that make education fun
                 and memorable. Interactive lessons encourage active participation
                 and deeper understanding.</p>
             </div>
-            <div class="why-choose--div">
+            <div class="why-choose--div" data-aos="zoom-in-up"
+            data-aos-delay="600">
             <p class="section-common--icon">3</p>
             <h3 class="section-common--title">Lifelong Learning Support</h3>
             <p>              Our commitment to your education doesn't end with a certificate.
@@ -213,7 +223,7 @@ welcome to JMD WEBDEV, your gateway to knowledge and skill development. we are d
             </div>
         </div>
         <!--* why-choose--center section -->
-        <div class="why-choose--center">
+        <div class="why-choose--center" data-aos="zoom-in">
 <figure>
     <img src="./image/Gray Minimalist Notification Spa Your Story .png" alt="why choose us image" width="80%" height="auto">
 </figure>
@@ -226,14 +236,16 @@ welcome to JMD WEBDEV, your gateway to knowledge and skill development. we are d
                 <p>Learn from experienced teachers who are passionate about sharing
                     knowledge and guiding you toward success in your learning journey.</p>
                 </div>
-                <div class="why-choose--div">
+                <div class="why-choose--div " data-aos="zoom-in-up"
+                data-aos-delay="300">
                 <p class="section-common--icon">5</p>
                 <h3 class="section-common--title">Lifelong Learning Support</h3>
                 <p> Our commitment to your education doesn't end with a certificate.
                     Receive ongoing support and resources for continuous learning and
                     growth.</p>
                 </div>
-                <div class="why-choose--div">
+                <div class="why-choose--div " data-aos="zoom-in-up"
+                data-aos-delay="600">
                 <p class="section-common--icon">6</p>
                 <h3 class="section-common--title">Lifelong Learning Support</h3>
                 <p>              Our commitment to your education doesn't end with a certificate.
@@ -320,5 +332,9 @@ welcome to JMD WEBDEV, your gateway to knowledge and skill development. we are d
     </div>
 </footer>
 <!--~ ========== End footer-section ========== -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
